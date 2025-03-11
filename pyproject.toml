@@ -1,0 +1,22 @@
+[project]
+name = "prompt-optimizer"
+version = "0.1.0"
+description = "A library for optimizing prompts"
+readme = "README.md"
+requires-python = ">=3.10"
+author = "BaptGau"
+
+dependencies = [
+    "baml-cli>=0.1.0",
+    "pydantic>=2.10.6",
+    "scipy==1.15.2",
+]
+
+[dependency-groups]
+experiments = [
+    "matplotlib>=3.10.1",
+    "seaborn>=0.13.2",
+]
+dev = [
+    "black>=25.1.0",
+]
